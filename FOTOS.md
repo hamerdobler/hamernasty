@@ -1,62 +1,50 @@
 # Inventario de imágenes del sitio
 
-Todas las imágenes actuales son **placeholders generados por Google Stitch** (URLs de `lh3.googleusercontent.com`) y deben reemplazarse por fotos reales del local. Este inventario lista cada ubicación en [index.html](index.html) con el nombre de archivo sugerido para la versión definitiva en `assets/img/`.
+Las fotos reales del local ya están integradas en `assets/img/` (origen: carpeta `D:\malloys fotos`). Este inventario documenta qué hay en cada ubicación de [index.html](index.html) y qué falta.
 
-> **Nota:** Stitch reutilizó la misma foto placeholder en varias ubicaciones (p. ej. la foto del deck al atardecer aparece 6 veces). Acá cada ubicación tiene su propio nombre de archivo sugerido, porque en la versión final cada una debería ser una foto distinta.
+## Archivos en `assets/img/`
 
-## Identidad
+| Archivo | Contenido | Origen |
+|---------|-----------|--------|
+| `logo.jpg` | Logo de Malloy's: "Bar de Costa 19✕82 · Cocina & Grill · Martínez Partido de San Isidro" (texto negro sobre fondo blanco) | `logomalloys.jpg` |
+| `hero-deck-atardecer.jpg` | Atardecer sobre el río con árboles y orilla de arena (optimizada: 1920px, 431 KB) | `atardecer malloys.jpg` |
+| `experiencia-bar.jpg` | Interior del bar: neón "Malloy's", estantes de botellas, lámparas colgantes y plantas | `bar malloys.png` (convertida a JPEG) |
+| `carta-brasas.jpg` | Matambre a la pizza con tomates cherry en plato negro | `carne malloys.png` (convertida a JPEG) |
+| `carta-sushi.jpg` | Bento box con rolls y niguiris | `sushi malloys.jpg` |
+| `carta-pastas.jpg` | Sorrentinos con salsa cremosa y copa de vino, sobre mantel de Malloy's | `pastas malloys.png` (convertida a JPEG) |
+| `carta-cocteleria.jpg` | Dos tragos en copas de cobre con el río al atardecer de fondo (vertical) | `tragos malloys.jpg` |
+| `google-logo.svg` | Logo "G" de Google para las reseñas | creado a mano (SVG único para las 3 reseñas) |
 
-| # | Qué muestra | Sección | Archivo sugerido |
-|---|-------------|---------|------------------|
-| 1 | Logo circular de Malloy's (sol, ola, "Bar de Costa — San Isidro, Argentina") | Barra de navegación, hero y footer (misma imagen en los 3 lugares) | `assets/img/logo.png` |
+## Asignación por ubicación
 
-## Hero (portada)
+| # | Sección / ubicación | Imagen usada | Estado |
+|---|---------------------|--------------|--------|
+| 1 | Nav, hero y footer — logo (en contenedor circular blanco) | `logo.jpg` | ✅ Definitiva |
+| 2 | Hero — fondo | `hero-deck-atardecer.jpg` | ✅ Definitiva |
+| 3 | Experiencia — imagen lateral | `experiencia-bar.jpg` | ✅ Definitiva |
+| 4 | Carta — "A las brasas" | `carta-brasas.jpg` | ✅ Definitiva |
+| 5 | Carta — "Sushi & tiraditos" | `carta-sushi.jpg` | ✅ Definitiva |
+| 6 | Carta — "Pastas" | `carta-pastas.jpg` | ✅ Definitiva |
+| 7 | Carta — "Coctelería de autor" | `carta-cocteleria.jpg` | ✅ Definitiva |
+| 8 | Galería — pieza grande 16:9 | `hero-deck-atardecer.jpg` (reutilizada) | ⏳ Espera foto propia (ideal: deck de madera al atardecer) |
+| 9 | Galería — pieza vertical 3:4 | `carta-cocteleria.jpg` (reutilizada) | ⏳ Espera foto propia (ideal: palmeras / exterior) |
+| 10 | Galería — cuadrada 1 | `carta-brasas.jpg` (reutilizada) | ⏳ Espera foto propia (otro plato a las brasas) |
+| 11 | Galería — cuadrada 2 | `carta-sushi.jpg` (reutilizada) | ⏳ Espera foto propia (otra pieza de sushi) |
+| 12 | Galería — cuadrada 3 | `carta-pastas.jpg` (reutilizada) | ⏳ Espera foto propia (otro plato o tragos) |
+| 13 | Galería — pieza ancha 21:9 | `experiencia-bar.jpg` (reutilizada, asignación pedida) | ⏳ Ideal: foto panorámica del interior |
+| 14 | Opiniones — logo de Google (×3) | `google-logo.svg` | ✅ Definitiva |
+| 15 | CTA final — fondo "Reservar por WhatsApp" | `hero-deck-atardecer.jpg` (reutilización aprobada) | ⏳ Puede recibir foto propia más adelante |
 
-| # | Qué muestra | Sección | Archivo sugerido |
-|---|-------------|---------|------------------|
-| 2 | Foto de fondo a pantalla completa: deck de madera sobre el río al atardecer, con palmeras y reposeras (luz dorada) | Hero — fondo | `assets/img/hero-deck-atardecer.jpg` |
+En la galería ninguna imagen aparece dos veces: atardecer, tragos, brasas, sushi, pastas y bar — las 6 fotos, una vez cada una.
 
-## La Experiencia (`#experiencia`)
+## Pendientes
 
-| # | Qué muestra | Sección | Archivo sugerido |
-|---|-------------|---------|------------------|
-| 3 | Mesas al aire libre con vista al río (hoy usa la misma foto del hero, con filtro sepia) | "Un bar de playa en San Isidro" — imagen lateral | `assets/img/experiencia-mesas-rio.jpg` |
+- **6 fotos nuevas** para que la galería y el CTA no reutilicen imágenes (ubicaciones #8, 9, 10, 11, 12, 15; #13 ya tiene la foto del bar asignada a pedido).
+- El **"mapa"** de la sección ubicación (`#ubicacion`) sigue siendo un placeholder hecho en HTML/CSS — considerar reemplazarlo por un embed de Google Maps.
+- `screen.png` (raíz del repo) es la captura del diseño de Stitch, no forma parte del sitio.
 
-## La Carta (`#carta`) — tarjetas de categorías
+## Notas técnicas
 
-| # | Qué muestra | Sección | Archivo sugerido |
-|---|-------------|---------|------------------|
-| 4 | Plato a las brasas (ojo de bife / costillar) | Tarjeta "A las brasas" | `assets/img/carta-brasas.jpg` |
-| 5 | Rolls de sushi y tiraditos | Tarjeta "Sushi & tiraditos" | `assets/img/carta-sushi.jpg` |
-| 6 | Plato de pastas caseras | Tarjeta "Pastas" | `assets/img/carta-pastas.jpg` |
-| 7 | Tragos / coctelería de autor | Tarjeta "Coctelería de autor" | `assets/img/carta-cocteleria.jpg` |
-
-## Galería (`#galeria`) — mosaico "Un lugar para quedarse"
-
-| # | Qué muestra | Sección | Archivo sugerido |
-|---|-------------|---------|------------------|
-| 8 | Deck de madera al atardecer (panorámica 16:9, hoy repite la foto del hero) | Galería — pieza grande superior | `assets/img/galeria-deck-atardecer.jpg` |
-| 9 | Palmeras (vertical 3:4, hoy repite la foto del hero) | Galería — pieza vertical | `assets/img/galeria-palmeras.jpg` |
-| 10 | Plato a las brasas (cuadrada, hoy repite la foto de la tarjeta #4) | Galería — cuadrada 1 | `assets/img/galeria-brasas.jpg` |
-| 11 | Sushi rolls (cuadrada, hoy repite la foto de la tarjeta #5) | Galería — cuadrada 2 | `assets/img/galeria-sushi.jpg` |
-| 12 | Tragos de autor (cuadrada, hoy repite la foto de la tarjeta #7) | Galería — cuadrada 3 | `assets/img/galeria-tragos.jpg` |
-| 13 | Interior con mural tropical (panorámica 21:9, hoy repite la foto del hero) | Galería — pieza ancha inferior | `assets/img/galeria-interior-mural.jpg` |
-
-## Opiniones (`#opiniones`)
-
-| # | Qué muestra | Sección | Archivo sugerido |
-|---|-------------|---------|------------------|
-| 14 | Logo de Google (aparece en las 3 tarjetas de reseñas, hoy con 3 URLs distintas) | Reseñas de Martina, Facundo y Valentina | `assets/img/google-logo.svg` (un solo archivo para las 3) |
-
-## CTA final
-
-| # | Qué muestra | Sección | Archivo sugerido |
-|---|-------------|---------|------------------|
-| 15 | Foto de fondo del bloque "Reservar por WhatsApp" (hoy repite la foto del hero) | Banda con CTA antes del footer | `assets/img/cta-rio-atardecer.jpg` |
-
-## Resumen
-
-- **15 ubicaciones** de imagen en el sitio, pero solo **8 archivos placeholder únicos** (Stitch repitió fotos).
-- Fotos reales necesarias: **13 fotos del local/platos + logo + logo de Google** (el logo de Google conviene bajarlo como SVG oficial).
-- La sección de ubicación (`#ubicacion`) no usa imagen: el "mapa" es un placeholder hecho con HTML/CSS. Considerar reemplazarlo por un embed de Google Maps.
-- `screen.png` (en la raíz del repo) es una captura del diseño exportada por Stitch, no forma parte del sitio.
+- Optimización aplicada: fotos > 500 KB se redimensionaron a máx. 1920px y/o recomprimieron como JPEG calidad ~75–82. Los PNG fotográficos se convirtieron a JPEG.
+- El logo tiene fondo blanco, por eso en el HTML se muestra dentro de un contenedor circular blanco (`bg-white` + `rounded-full` + padding), replicando el diseño original.
+- La convención de nombres refleja la ubicación *principal* de cada foto; las reutilizaciones referencian el mismo archivo (no hay copias duplicadas).
