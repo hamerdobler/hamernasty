@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es-AR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>La Carta · Malloy's - Bar de Costa</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&amp;family=Dm+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600&amp;family=DM+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"tertiary-fixed": "#b9eaff", error: "#ba1a1a", "tertiary-fixed-dim": "#6cd3f9", "surface-variant": "#f9dcd7", "surface-dim": "#f0d4cf", surface: "#fff8f6", "on-surface": "#271815", "on-secondary-container": "#752317", "surface-container-low": "#fff0ee", "on-primary-fixed-variant": "#920800", "primary-container": "#d83925", "on-tertiary": "#ffffff", outline: "#8f706a", "on-primary-fixed": "#400100", "error-container": "#ffdad6", "inverse-surface": "#3e2c29", "on-surface-variant": "#5b403c", "on-background": "#271815", primary: "#b41e0e", "on-error-container": "#93000a", "surface-bright": "#fff8f6", "inverse-primary": "#ffb4a7", secondary: "#9e4132", "secondary-fixed-dim": "#ffb4a7", "on-primary": "#ffffff", "surface-container-lowest": "#ffffff", background: "#fff8f6", "surface-tint": "#b82110", "primary-fixed": "#ffdad4", "primary-fixed-dim": "#ffb4a7", "secondary-fixed": "#ffdad4", "on-primary-container": "#fffbff", "surface-container-high": "#ffe2dd", "surface-container-highest": "#f9dcd7", "outline-variant": "#e4beb7", "surface-container": "#ffe9e5", "on-tertiary-container": "#fafdff", "on-secondary-fixed": "#400100", "inverse-on-surface": "#ffedea", tertiary: "#00647e", "on-error": "#ffffff", "tertiary-container": "#007f9e", "on-tertiary-fixed": "#001f29", "on-secondary": "#ffffff", "secondary-container": "#fe8b77", "on-secondary-fixed-variant": "#7f2a1e", "on-tertiary-fixed-variant": "#004d62"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {unit: "8px", "container-max": "1280px", "margin-mobile": "20px", gutter: "24px", "margin-desktop": "60px", "section-gap": "120px"}, fontFamily: {"display-lg": ["Bricolage Grotesque"], "display-lg-mobile": ["Bricolage Grotesque"], "headline-md": ["Bricolage Grotesque"], "headline-sm": ["Bricolage Grotesque"], "body-lg": ["DM Sans"], "body-md": ["DM Sans"], "label-caps": ["DM Sans"], headline: ["Bricolage Grotesque"], display: ["Bricolage Grotesque"], body: ["Dm Sans"], label: ["Dm Sans"]}, fontSize: {"display-lg": ["64px", {lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "600"}], "display-lg-mobile": ["40px", {lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "600"}], "headline-md": ["32px", {lineHeight: "1.3", fontWeight: "500"}], "headline-sm": ["24px", {lineHeight: "1.4", fontWeight: "500"}], "body-lg": ["18px", {lineHeight: "1.6", fontWeight: "400"}], "body-md": ["16px", {lineHeight: "1.6", fontWeight: "400"}], "label-caps": ["12px", {lineHeight: "1", letterSpacing: "0.1em", fontWeight: "700"}]}}}};</script>
+<style>
+  /* Offset for the sticky index bar when jumping to a section */
+  .section-anchor { scroll-margin-top: 140px; }
+  /* Hide scrollbar on the index chip strip while keeping it scrollable */
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  /* Rotate the chevron when a collapsible section is open */
+  details[open] .chev { transform: rotate(180deg); }
+  .chev { transition: transform 0.25s ease; }
+</style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+
+<!-- Top bar -->
+<header class="bg-surface border-b border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4 flex items-center justify-between gap-4">
+<a class="flex items-center gap-2" href="index.html">
+<img alt="Malloy's Logo" class="h-10 w-10 object-contain rounded-full shadow-sm bg-white p-0.5" src="assets/img/logo.jpg"/>
+<span class="font-display-lg text-headline-sm text-primary tracking-tight">Malloy's</span>
+</a>
+<a class="inline-flex items-center gap-1.5 border-2 border-primary/60 text-primary rounded-full px-4 md:px-6 py-2 font-body-md font-bold uppercase tracking-wide text-sm hover:bg-primary hover:text-on-primary transition-all duration-300" href="index.html">
+<span class="material-symbols-outlined text-lg">arrow_back</span>
+<span class="hidden sm:inline">Volver al inicio</span>
+<span class="sm:hidden">Inicio</span>
+</a>
+</div>
+</header>
+
+<!-- Title -->
+<section class="bg-surface pt-12 pb-8 px-margin-mobile md:px-margin-desktop text-center">
+<div class="max-w-container-max mx-auto">
+<p class="font-label-caps uppercase text-tertiary mb-3">San Isidro, AR</p>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tight mb-4">La Carta</h1>
+<p id="priceNote" class="text-body-md text-on-surface-variant/80 max-w-2xl mx-auto"></p>
+</div>
+</section>
+
+<!-- Sticky section index -->
+<nav id="indexBar" class="sticky top-0 z-40 bg-surface/95 backdrop-blur-xl border-y border-outline-variant/30 shadow-sm shadow-primary/5">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div id="indexChips" class="flex gap-2 overflow-x-auto no-scrollbar py-3 md:flex-wrap md:justify-center"></div>
+</div>
+</nav>
+
+<!-- Menu content (rendered from JSON) -->
+<main id="menu" class="max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop py-12 flex flex-col gap-14"></main>
+
+<!-- Loading / error state -->
+<div id="statusMsg" class="max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop pb-16 text-center text-on-surface-variant">
+  Cargando la carta…
+</div>
+
+<!-- Footer back link -->
+<footer class="bg-surface-container py-12 px-margin-mobile md:px-margin-desktop border-t border-outline-variant/30">
+<div class="max-w-container-max mx-auto flex flex-col items-center gap-6">
+<a class="inline-flex items-center gap-2 bg-primary-container text-on-tertiary px-8 py-4 rounded-full font-body-md font-bold uppercase tracking-wide hover:scale-105 hover:shadow-lg transition-all duration-300 shadow-sm shadow-primary/20" href="index.html">
+<span class="material-symbols-outlined text-lg">home</span>
+Volver al inicio
+</a>
+<p class="text-on-surface-variant text-[10px] uppercase tracking-widest opacity-60 text-center">© 2024 Malloy's Bar de Costa. Todos los derechos reservados.</p>
+</div>
+</footer>
+
+<!-- Back to top floating button -->
+<button id="toTop" aria-label="Volver arriba" class="fixed bottom-8 right-8 z-50 bg-primary text-on-primary p-3 rounded-full shadow-lg hover:scale-110 transition-all duration-300 opacity-0 pointer-events-none flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">arrow_upward</span>
+</button>
+
+<script>
+(function () {
+  var COLLAPSIBLE = new Set([
+    "Bebidas — Cafetería", "Bebidas Sin Alcohol", "Cervezas", "Jarras",
+    "Cocktail de Autor", "Cocktail Clásicos", "Whisky", "Vinos", "Espumantes"
+  ]);
+
+  var money = new Intl.NumberFormat("es-AR", { style: "currency", currency: "ARS", minimumFractionDigits: 0, maximumFractionDigits: 0 });
+
+  function slug(s) {
+    return s.toLowerCase()
+      .normalize("NFD").replace(/[̀-ͯ]/g, "")
+      .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  }
+  function el(tag, cls, html) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (html != null) e.innerHTML = html;
+    return e;
+  }
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+    });
+  }
+
+  function veggieBadge() {
+    return '<span class="inline-flex items-center gap-1 align-middle bg-tertiary/10 border border-tertiary/30 text-tertiary px-2 py-0.5 rounded-full font-label-caps uppercase text-[10px] ml-2">' +
+      '<span class="material-symbols-outlined text-[13px] leading-none">eco</span>Veggie</span>';
+  }
+
+  function itemRow(item) {
+    var row = el("div", "py-3 border-b border-dashed border-outline/30 last:border-0");
+    var top = el("div", "flex items-baseline gap-3");
+    var name = el("span", "font-display-lg text-body-lg text-on-surface font-medium",
+      esc(item.nombre) + (item.veggie ? veggieBadge() : ""));
+    top.appendChild(name);
+
+    if (item.precio != null) {
+      var leader = el("span", "flex-1 border-b border-dotted border-outline/40 translate-y-[-3px] min-w-6");
+      var price = el("span", "font-body-md text-body-md font-bold text-primary whitespace-nowrap", money.format(item.precio));
+      top.appendChild(leader);
+      top.appendChild(price);
+    } else if (item.precio === null) {
+      var leader2 = el("span", "flex-1 border-b border-dotted border-outline/40 translate-y-[-3px] min-w-6");
+      var consult = el("span", "font-body-md text-body-md italic text-on-surface-variant/70 whitespace-nowrap", "Consultar");
+      top.appendChild(leader2);
+      top.appendChild(consult);
+    }
+    row.appendChild(top);
+
+    if (item.descripcion) {
+      row.appendChild(el("p", "text-body-md text-on-surface-variant mt-1 pr-4", esc(item.descripcion)));
+    }
+    return row;
+  }
+
+  function sectionBlock(sec) {
+    var id = "sec-" + slug(sec.nombre);
+    var wrap = el("section", "section-anchor");
+    wrap.id = id;
+
+    var itemsWrap = el("div", "");
+    sec.items.forEach(function (it) { itemsWrap.appendChild(itemRow(it)); });
+
+    var heading = el("h2", "font-display-lg text-headline-md text-primary tracking-tight");
+    heading.textContent = sec.nombre;
+
+    if (COLLAPSIBLE.has(sec.nombre)) {
+      var details = el("details", "group");
+      var summary = el("summary", "flex items-center justify-between gap-3 cursor-pointer list-none py-2 border-b-2 border-primary/20");
+      summary.appendChild(heading);
+      summary.appendChild(el("span", "chev material-symbols-outlined text-primary text-3xl", "expand_more"));
+      details.appendChild(summary);
+      var body = el("div", "pt-2");
+      if (sec.nota) body.appendChild(el("p", "text-body-md italic text-on-surface-variant/80 mb-2", esc(sec.nota)));
+      body.appendChild(itemsWrap);
+      details.appendChild(body);
+      wrap.appendChild(details);
+    } else {
+      heading.className += " border-b-2 border-primary/20 pb-2 mb-2";
+      wrap.appendChild(heading);
+      if (sec.nota) wrap.appendChild(el("p", "text-body-md italic text-on-surface-variant/80 mb-2", esc(sec.nota)));
+      wrap.appendChild(itemsWrap);
+    }
+    return wrap;
+  }
+
+  function chip(sec) {
+    var a = el("a", "shrink-0 whitespace-nowrap px-4 py-1.5 rounded-full font-label-caps uppercase text-[11px] border border-outline-variant text-on-surface-variant bg-surface-container-low hover:bg-primary hover:text-on-primary hover:border-primary transition-colors duration-200");
+    a.href = "#sec-" + slug(sec.nombre);
+    a.textContent = sec.nombre;
+    a.addEventListener("click", function (ev) {
+      ev.preventDefault();
+      goToSection("sec-" + slug(sec.nombre));
+    });
+    return a;
+  }
+
+  function goToSection(id) {
+    var target = document.getElementById(id);
+    if (!target) return;
+    var d = target.querySelector("details");
+    if (d) d.open = true;
+    history.replaceState(null, "", "#" + id);
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  fetch("menu-malloys.json")
+    .then(function (r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    })
+    .then(function (data) {
+      document.getElementById("priceNote").textContent = data.nota_precios || "";
+      var menu = document.getElementById("menu");
+      var chips = document.getElementById("indexChips");
+      data.secciones.forEach(function (sec) {
+        chips.appendChild(chip(sec));
+        menu.appendChild(sectionBlock(sec));
+      });
+      document.getElementById("statusMsg").remove();
+
+      // If page loaded with a hash, open + scroll after render
+      if (location.hash) {
+        var id = location.hash.slice(1);
+        setTimeout(function () { goToSection(id); }, 60);
+      }
+    })
+    .catch(function (err) {
+      document.getElementById("statusMsg").innerHTML =
+        'No se pudo cargar la carta. <a class="text-primary underline" href="index.html">Volver al inicio</a>.';
+      console.error("Error cargando el menú:", err);
+    });
+
+  // Back-to-top button visibility
+  var toTop = document.getElementById("toTop");
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 600) {
+      toTop.classList.remove("opacity-0", "pointer-events-none");
+    } else {
+      toTop.classList.add("opacity-0", "pointer-events-none");
+    }
+  });
+  toTop.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+})();
+</script>
+</body></html>

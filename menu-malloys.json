@@ -1,0 +1,373 @@
+{
+  "restaurante": "Malloy's Bar de Costa",
+  "moneda": "ARS",
+  "nota_precios": "Precios transcriptos del menú digital oficial (Cartear) en julio 2026. Verificar vigencia antes de publicar como definitivos.",
+  "secciones": [
+    {
+      "nombre": "Entradas",
+      "items": [
+        { "nombre": "Tiradito Costa", "descripcion": "Cortes de salmón rosado, pichicata, aceite de oliva.", "precio": 35000 },
+        { "nombre": "Empanada de Carne Cortada a Cuchillo", "descripcion": "Tradicional empanada argentina con relleno de carne cortada a cuchillo.", "precio": 12000 },
+        { "nombre": "Papas Bastón", "descripcion": "Deliciosas papas fritas estilo casero, crocantes por fuera.", "precio": 14900 },
+        { "nombre": "Tiradito Malloy's", "descripcion": "Tiradito de salmón estilo Nikkei con aguacate, maíz cancha.", "precio": 35000 },
+        { "nombre": "Rabas a la Romana con Salsa Tártara", "descripcion": "Calamares frescos rebozados a la perfección, servidos con salsa tártara.", "precio": 23600 },
+        { "nombre": "Langostinos Rebozados con Mayo Casera de Rúcula", "descripcion": "Langostinos rebozados en panko, crujientes por fuera.", "precio": 24500 },
+        { "nombre": "Burratina Malloy's", "descripcion": "Burratina, rúcula, mortadela con pistacho, pesto y oliva extra.", "precio": 24500 },
+        { "nombre": "Muzzarelitas Apanadas Crocantes", "descripcion": "Suaves por dentro y crujientes por fuera, bocados de muzzarella.", "precio": 18900 },
+        { "nombre": "Bocaditos de Acelga y Parmesano con Mayo de Morrón", "descripcion": "Pequeñas delicias de acelga y queso parmesano.", "precio": 15900 },
+        { "nombre": "Provoleta Especial con Rúcula y Champiñones Asados", "descripcion": "Provoleta dorada con rúcula fresca y champiñones asados.", "precio": 19500, "veggie": true },
+        { "nombre": "Chorizo de Campo a la Parrilla con Criolla y Chimichurri", "descripcion": "Chorizo artesanal cocido a las brasas, acompañado de salsa criolla.", "precio": 12000 },
+        { "nombre": "Buñuelos de Salmón y Finlandia", "descripcion": "5 buñuelos sobre guacamole, coronados con sriracha casera.", "precio": 23500 }
+      ]
+    },
+    {
+      "nombre": "Comen Dos, Pican Más",
+      "items": [
+        { "nombre": "Tabla de Quesos y Fiambres", "descripcion": "Selección exclusiva de quesos curados, fiambres artesanales.", "precio": 56000, "veggie": false },
+        { "nombre": "Tabla Malloys de Calentitos", "descripcion": "Una propuesta que combina lo mejor de los bocados calientes.", "precio": 65000 }
+      ]
+    },
+    {
+      "nombre": "Ensaladas",
+      "items": [
+        { "nombre": "Rústica de Aeroparque", "descripcion": "Mix de hojas verdes con rúcula, bocconcinos, jamón serrano.", "precio": 25000, "veggie": false },
+        { "nombre": "Ensalada Summer", "descripcion": "Ensalada fresca con mix de verdes, palta, ananá grillada.", "precio": 27000 },
+        { "nombre": "Ensalada Caesar Clásica", "descripcion": "Disponible con pollo crocante, langostinos rebozados o salmón.", "precio": 26500 },
+        { "nombre": "Ensalada Malloy's", "descripcion": "Calabaza rostizada con tomillo, mix de hojas verdes, quinoa.", "precio": 25000 }
+      ]
+    },
+    {
+      "nombre": "Principales — De la Parrilla",
+      "items": [
+        { "nombre": "Entraña 300gr", "descripcion": "Deliciosa entraña en su punto de cocción perfecto a la parrilla.", "precio": 40900 },
+        { "nombre": "Asado Banderita", "descripcion": "Asado banderita a las brasas acompañado de dips de chimichurri.", "precio": 39000 },
+        { "nombre": "Ojo de Bife 450g", "descripcion": "Corte de carne premium, cocido al punto perfecto en parrilla.", "precio": 42000, "veggie": false },
+        { "nombre": "Bife de Chorizo 450g", "descripcion": "Un clásico argentino, jugoso y con un sabor intenso.", "precio": 39900, "veggie": false },
+        { "nombre": "Cuarto de Pollo Al Carbón", "descripcion": "Pata muslo deshuesada a la parrilla.", "precio": 33000 },
+        { "nombre": "Paillard de Pollo con Limón y Tomillo", "descripcion": "Pechuga de pollo a la parrilla con un delicado sabor a limón y tomillo.", "precio": 33500, "veggie": false },
+        { "nombre": "Salmón al Limón", "descripcion": "Lomo de salmón fresco, grillado y bañado en un jugo de limón.", "precio": 46000, "veggie": false },
+        { "nombre": "Parrillada de Vegetales", "descripcion": "Selección de vegetales de estación, asados al carbón.", "precio": 27000, "veggie": true },
+        { "nombre": "Guarniciones", "descripcion": "Puré de papas, puré de calabaza, papas fritas, ensalada mixta.", "precio": 9500 }
+      ]
+    },
+    {
+      "nombre": "Principales — De la Cocina",
+      "items": [
+        { "nombre": "Abadejo a la Chapa", "descripcion": "Abadejo a la chapa acompañado de puré cremoso y laca.", "precio": 35000 },
+        { "nombre": "Lomo a la Chapa Malloy's", "descripcion": "Lomo a la chapa con salsa de champignon.", "precio": 45000 },
+        { "nombre": "Ribs Laqueadas con BBQ Casera", "descripcion": "Costillas tiernas, cocinadas a baja temperatura y laqueadas.", "precio": 38000 },
+        { "nombre": "Bondiola Rostizada con Salsa Romero", "descripcion": "Jugosa bondiola cocida lentamente, servida con una salsa de romero.", "precio": 36000 },
+        { "nombre": "Pechuga Rellena de Jamón y Queso con Salsa de Hongos", "descripcion": "Pechuga de pollo rellena con jamón y queso servida con salsa de hongos.", "precio": 36000 },
+        { "nombre": "Milanesas Especiadas de Peceto", "descripcion": "Corte de peceto cubierto en especias selectas y empanado.", "precio": 33000 },
+        { "nombre": "Milanesa Malloys con Provoleta, Tomates Secos y Huevos Fritos", "descripcion": "Nuestra versión gourmet napolitana, con provoleta.", "precio": null },
+        { "nombre": "Vacío en Cocción Lenta de 4hs", "descripcion": "Vacío cocido a fuego lento durante 4 horas en vino tinto.", "precio": 39900 }
+      ]
+    },
+    {
+      "nombre": "Entre Panes",
+      "nota": "Servidos en ciabatta, con papas fritas.",
+      "items": [
+        { "nombre": "Guacamole Chicken", "descripcion": "Pechuga de pollo grillada con guacamole casero, tomate.", "precio": 28600 },
+        { "nombre": "Burger Clásica", "descripcion": "Hamburguesa de carne vacuna con lechuga fresca y tomate.", "precio": 26000 },
+        { "nombre": "Burger Malloys", "descripcion": "Doble hamburguesa, cheddar fundido, panceta crujiente.", "precio": 29000 },
+        { "nombre": "Pulled Pork Sandwich con Cheddar", "descripcion": "Cerdo desmenuzado al estilo sureño, acompañado de cheddar.", "precio": 29000 }
+      ]
+    },
+    {
+      "nombre": "Pastas",
+      "items": [
+        { "nombre": "Farfalle Mar y Campo", "descripcion": "Farfalles acompañados de langostinos, panceta.", "precio": 29500 },
+        { "nombre": "Ravioles de Calabaza en Masa de Rúcula con Salsa Pomodoro", "descripcion": "Delicados ravioles de calabaza envueltos en una masa verde.", "precio": 29000 },
+        { "nombre": "Tortellinis en Masa de Sepia Rellenos de Mousse de Salmón", "descripcion": "Tortellinis en masa negra rellenos con mousse de salmón.", "precio": 32000 },
+        { "nombre": "Raviolones de Ternera con Boloñesa Clásica", "descripcion": "Pasta rellena de ternera, servida con una boloñesa tradicional.", "precio": 29500 },
+        { "nombre": "Espaguetis con Mariscos de Estación", "descripcion": "Espaguetis al dente con una selección de mariscos frescos.", "precio": 33000 }
+      ]
+    },
+    {
+      "nombre": "Sushi — Por Piezas",
+      "items": [
+        { "nombre": "5 Piezas", "precio": 22000 },
+        { "nombre": "10 Piezas", "precio": 40000 },
+        { "nombre": "15 Piezas", "precio": 48000 },
+        { "nombre": "30 Piezas", "precio": 85000 }
+      ]
+    },
+    {
+      "nombre": "Sushi — Rolls Clásicos",
+      "items": [
+        { "nombre": "New York Phila", "descripcion": "Queso philadelphia, palta, salmón fresco." },
+        { "nombre": "Buenos Aires", "descripcion": "Queso philadelphia, langostinos, palta, salmón, por fuera." },
+        { "nombre": "New York", "descripcion": "Salmón, palta." },
+        { "nombre": "California Roll", "descripcion": "Pasta de surimi, queso philadelphia, palta." },
+        { "nombre": "Philadelphia Roll", "descripcion": "Salmón, queso philadelphia." }
+      ]
+    },
+    {
+      "nombre": "Sushi — Veggie",
+      "items": [
+        { "nombre": "Osaka Roll", "descripcion": "Philadelphia, shitake, sunomono." }
+      ]
+    },
+    {
+      "nombre": "Sushi — Geishas",
+      "items": [
+        { "nombre": "Marsella Roll", "descripcion": "Brie, rúcula, tomates secos, cheddar tibio por fuera." }
+      ]
+    },
+    {
+      "nombre": "Sushi — Sashimis",
+      "items": [
+        { "nombre": "De Salmón", "descripcion": "Salmón rosado." },
+        { "nombre": "De Pulpo" }
+      ]
+    },
+    {
+      "nombre": "Sushi — Nigiris",
+      "items": [
+        { "nombre": "De Salmón" },
+        { "nombre": "De Langostinos" }
+      ]
+    },
+    {
+      "nombre": "Sushi — Rolls Especiales",
+      "items": [
+        { "nombre": "Placer Real", "descripcion": "Con maracuyá y batatas." },
+        { "nombre": "Tisok Hot Roll", "descripcion": "Salmón, philadelphia, tempura, guacamole spicy." },
+        { "nombre": "American Hot", "descripcion": "Langostino, philadelphia, palta, apanado en panko, salsa teriyaki." },
+        { "nombre": "Singapur", "descripcion": "Langostinos panko, philadelphia, sunomono, cheddar tibio por fuera." },
+        { "nombre": "Chana Roll", "descripcion": "Pasta de salmón, mango, palta, gratinado con mayonesa." }
+      ]
+    },
+    {
+      "nombre": "Postres",
+      "items": [
+        { "nombre": "Panqueque Quemado de Dulce de Leche con Helado", "descripcion": "Clásico panqueque flameado, servido con helado de crema.", "precio": 15900 },
+        { "nombre": "Ensalada de Frutas con Crema", "descripcion": "Frutas frescas de estación acompañadas de una suave crema.", "precio": 15900, "veggie": true },
+        { "nombre": "Volcán de Chocolate", "descripcion": "Volcán de chocolate con helado de americana y frutos rojos.", "precio": 19500 },
+        { "nombre": "Copa Negra Malloys", "descripcion": "Mousse de chocolate amargo, tierra de Oreo, garrapiñadas.", "precio": 19500 },
+        { "nombre": "Flan Clásico con Ron", "descripcion": "", "precio": 16000 },
+        { "nombre": "Helados Tres Sabores con Salsa de Frutos Rojos y Garrapiñada", "descripcion": "Tres sabores de helado sin gluten, acompañados de salsa.", "precio": 16000 },
+        { "nombre": "Tarta Franui con Dúo de Ganache, Frambuesas y Dulce de Leche", "descripcion": "Tarta de chocolate con ganache de frambuesas y dulce de leche.", "precio": 15200 }
+      ]
+    },
+    {
+      "nombre": "Menú Kids",
+      "nota": "Una propuesta diseñada especialmente para los comensales más chicos, donde cada plato está elaborado con ingredientes seleccionados.",
+      "items": [
+        { "nombre": "Milanesa de Pollo con Puré de Papas o Papas Fritas", "descripcion": "Delicada milanesa de pollo rebozada y frita.", "precio": 24000 },
+        { "nombre": "Hamburguesa Clásica con Queso y Papas Fritas", "descripcion": "Jugosa hamburguesa de carne, con queso derretido.", "precio": 24000 },
+        { "nombre": "Milanesas de Peceto con Puré o Papas Fritas", "descripcion": "Finas milanesas de peceto, empanadas y fritas.", "precio": 24000 },
+        { "nombre": "Ravioles de Calabaza con Salsa Pomodoro", "descripcion": "", "precio": 24000 },
+        { "nombre": "Sorrentinos de Jamón y Queso con Crema o Salsa Fileto", "descripcion": "Delicados sorrentinos rellenos de jamón y queso.", "precio": 24000 }
+      ]
+    },
+    {
+      "nombre": "Menú Merienda",
+      "nota": "Productos disponibles a partir de las 16:30hs.",
+      "items": [
+        { "nombre": "Alfajor de Maicena Dubai", "descripcion": "Delicioso alfajor de maicena relleno de dulce de leche.", "precio": 9500 },
+        { "nombre": "Cookie de Vainilla con Chips de Chocolate", "precio": 6200 },
+        { "nombre": "Budín Limón y Arándanos", "precio": 6900 },
+        { "nombre": "Budín Chocolate y Almendras", "precio": 6900 },
+        { "nombre": "Scone Clásico", "precio": 5500 },
+        { "nombre": "Scone Queso y Romero", "precio": 5500 },
+        { "nombre": "Scone Queso y Nueces", "precio": 5500 },
+        { "nombre": "Chocotorta", "precio": 15000 },
+        { "nombre": "Torta del Día", "precio": 15000 },
+        { "nombre": "Tostadas con Dips de Queso y Mermelada", "precio": 19900 },
+        { "nombre": "Tostado en Pan Ciabatta de Jamón y Queso", "precio": 13000 },
+        { "nombre": "Avocado Toast Clásico", "precio": 22000 }
+      ]
+    },
+    {
+      "nombre": "Bebidas — Cafetería",
+      "items": [
+        { "nombre": "Café Nespresso", "descripcion": "L'Amaretti (Decaffeinato, Almendra y galleta), Latte.", "precio": 5000 },
+        { "nombre": "Capuchino", "precio": 5900 },
+        { "nombre": "Submarino", "precio": 6300 },
+        { "nombre": "Té", "precio": 5000 },
+        { "nombre": "Té Variedades Especiales", "precio": 5500 }
+      ]
+    },
+    {
+      "nombre": "Bebidas Sin Alcohol",
+      "items": [
+        { "nombre": "Agua Sin Gas", "precio": 5200 },
+        { "nombre": "Agua Con Gas", "precio": 5200 },
+        { "nombre": "Gaseosa Línea Coca Cola", "precio": 5300 },
+        { "nombre": "Limonada", "precio": 6900 },
+        { "nombre": "Limonada con Menta y Jengibre", "precio": 7500 },
+        { "nombre": "Exprimido de Naranja", "precio": 6900 },
+        { "nombre": "FIZZ", "descripcion": "Syrup, limón, maracuyá, naranja.", "precio": 8900 },
+        { "nombre": "Licuado de Banana con Leche", "precio": 8900 },
+        { "nombre": "Licuado de Durazno y Mango", "precio": 8900 },
+        { "nombre": "Limonada de Frutos Rojos", "precio": 7500 },
+        { "nombre": "Limonada de Maracuyá con Menta y Jengibre", "precio": 7500 },
+        { "nombre": "Aguas Saborizadas Aquarius", "precio": 5400 },
+        { "nombre": "Pomelada", "descripcion": "Jugo de pomelo rosado.", "precio": 6900 }
+      ]
+    },
+    {
+      "nombre": "Cervezas",
+      "items": [
+        { "nombre": "Porrón Corona 330 CC", "precio": 7900 },
+        { "nombre": "Porrón Stella Artois 330 CC", "precio": 7900 },
+        { "nombre": "Patagonia Lager del Sur 473 CC Can", "precio": 7900 },
+        { "nombre": "Lata Patagonia 24.7 473 CC", "precio": 7900 },
+        { "nombre": "Lata Patagonia Amber Lager 473 CC", "precio": 7900 },
+        { "nombre": "Porrón Corona 330 CC 0.0", "precio": 7900 },
+        { "nombre": "Porrón Stella Artois 330 CC 0.0", "precio": 7900 }
+      ]
+    },
+    {
+      "nombre": "Jarras",
+      "items": [
+        { "nombre": "Jarra de Limonada Clásica", "precio": 15000 },
+        { "nombre": "Jarra de Limonada de Frutos Rojos", "precio": 17000 },
+        { "nombre": "Jarra de Clericot con Vino Tinto", "precio": 26000 },
+        { "nombre": "Jarra de Clericot con Vino Blanco", "precio": 26000 },
+        { "nombre": "Jarra de Clericot con Espumante", "precio": 39000 },
+        { "nombre": "Jarra de Limonada de Menta y Jengibre", "precio": 17000 },
+        { "nombre": "Jarra de Limonada de Maracuyá con Menta y Jengibre", "precio": 17000 }
+      ]
+    },
+    {
+      "nombre": "Cocktail de Autor",
+      "items": [
+        { "nombre": "Flamenco", "descripcion": "Sernova Vodka, Aperol, Lemon, Elderberry and Red Fruit Syrup.", "precio": 11900 },
+        { "nombre": "Moondust", "descripcion": "Jägermeister, Carpano Rosso, passion fruit and red fruits.", "precio": 12200 },
+        { "nombre": "Florida", "descripcion": "Malibu rum, Carpano Bianco, passion fruit, orange and soda.", "precio": 11900 },
+        { "nombre": "Sauco Spritz", "descripcion": "Licor de Sauco, Espumante y Lima.", "precio": 12500 },
+        { "nombre": "Kalahari", "descripcion": "Ron Havana, Granadina, Lima-maracuyá y naranja.", "precio": 12700 },
+        { "nombre": "Laidy Negroni", "descripcion": "Ron Havana, Cynar and Carpano Rosso.", "precio": 11900 },
+        { "nombre": "Tinto de Verano", "descripcion": "Vino Tinto, cordial de naranja y gaseosa de lima y limón.", "precio": 11900 },
+        { "nombre": "Malloy's Summer", "descripcion": "Ron, jugo de frutos rojos, cordial de ananá y almíbar de menta.", "precio": 12500 }
+      ]
+    },
+    {
+      "nombre": "Cocktail Clásicos",
+      "items": [
+        { "nombre": "Negroni", "descripcion": "Gin Tanqueray, Campari, Carpano Rosso.", "precio": 11500 },
+        { "nombre": "Clover Club", "descripcion": "Gin Gordons, limón, frutos rojos, albúmina.", "precio": 11500 },
+        { "nombre": "Pisco Sour", "descripcion": "Pisco, limón, syrup, albúmina. Op: Peruano o Chileno.", "precio": 11900 },
+        { "nombre": "Boulevardier", "descripcion": "Bourbon, Campari, Carpano Rosso.", "precio": 12200 },
+        { "nombre": "Paper Plane", "descripcion": "Bourbon Benchmark, Averna, Aperol, limón.", "precio": 12200 },
+        { "nombre": "Espresso Martini", "descripcion": "Absolut, Borguetti Coffee Liqueur, Cold Brew, Syrup.", "precio": 12500 },
+        { "nombre": "Margarita", "descripcion": "Tequila José Cuervo, licor de naranja, limón.", "precio": 11900 },
+        { "nombre": "Cynar Julep", "descripcion": "Cynar, limón, syrup, menta fresca, pomelo.", "precio": 11900 },
+        { "nombre": "Mojito", "descripcion": "Ron Havana, limón, syrup, menta fresca, soda.", "precio": 11500 },
+        { "nombre": "Dry Martini", "descripcion": "Gin Tanqueray, Vermouth Dry, aceitunas.", "precio": 12000 },
+        { "nombre": "Manhattan", "descripcion": "Benchmark Whisky, Carpano Rosso, Bitter Angostura.", "precio": 12500 },
+        { "nombre": "Daiquiri Frozen", "descripcion": "Ron Havana, limón, syrup. Op: Maracuyá o frutilla.", "precio": 12900 },
+        { "nombre": "Carpano Orange", "descripcion": "70% Carpano Rosso, 30% Soda, rodaja de naranja.", "precio": 11900 },
+        { "nombre": "Fernet Branca", "descripcion": "Fernet Branca y Coca-cola.", "precio": 11900 },
+        { "nombre": "Gin Tonic Spirito Blu", "descripcion": "Gin Spirito Blu, Tonic.", "precio": 12200 },
+        { "nombre": "Jägermeister", "descripcion": "", "precio": 12500 },
+        { "nombre": "Aperol Spritz", "descripcion": "Aperol, rodaja de naranja, espumante, chorrito de soda.", "precio": 12500 },
+        { "nombre": "Antica On The Rocks", "descripcion": "Antica formula. Medida, hielo.", "precio": 12200 }
+      ]
+    },
+    {
+      "nombre": "Whisky",
+      "items": [
+        { "nombre": "Chivas 12 años", "precio": 26000 },
+        { "nombre": "Johnnie Walker Red", "precio": 18000 },
+        { "nombre": "Johnnie Walker Black Label", "precio": 24000 },
+        { "nombre": "Johnnie Walker Double Black Label", "precio": 29000 },
+        { "nombre": "The Glenlivet Reserva", "precio": 42000 },
+        { "nombre": "Jack Daniels", "precio": 24000 },
+        { "nombre": "Jack Daniels Honey", "precio": 24000 },
+        { "nombre": "Wild Turkey 101", "precio": 25000 }
+      ]
+    },
+    {
+      "nombre": "Vinos",
+      "nota": "Precios por botella salvo indicación. Incluye copa de vino premium ($12000).",
+      "items": [
+        { "nombre": "Álamos Malbec", "precio": 25000 },
+        { "nombre": "Álamos Cabernet Sauvignon", "precio": 25000 },
+        { "nombre": "Álamos Chardonnay", "precio": 25000 },
+        { "nombre": "Saint Felicien", "descripcion": "Malbec / Chardonnay / Cab. Sauv. / Cab Merlot / Pinot / Sauv Blanc.", "precio": 30000 },
+        { "nombre": "Angélica Zapata Cabernet Sauvignon Alta", "precio": 72000 },
+        { "nombre": "Angélica Zapata Chardonnay Alta", "precio": 68000 },
+        { "nombre": "Angélica Zapata Malbec Alta", "precio": 89000 },
+        { "nombre": "D.V. Catena Cabernet-Malbec", "precio": 39000 },
+        { "nombre": "D.V. Catena Cabernet-Cabernet", "precio": 46000 },
+        { "nombre": "D.V. Catena Chardonnay-Chardonnay", "precio": 42000 },
+        { "nombre": "Argentine Malbec", "precio": 154000 },
+        { "nombre": "Nicolas Catena Zapata", "precio": 172000 },
+        { "nombre": "Trumpeter Malbec", "precio": 25000 },
+        { "nombre": "Trumpeter Cabernet Sauvignon", "precio": 25000 },
+        { "nombre": "Trumpeter Chardonnay", "precio": 25000 },
+        { "nombre": "Trumpeter Reserve Pinot Noir", "precio": 30000 },
+        { "nombre": "Trumpeter Reserve Malbec", "precio": 30000 },
+        { "nombre": "Trumpeter Reserve Cabernet Sauvignon", "precio": 30000 },
+        { "nombre": "Trumpeter Reserve Rose de Malbec", "precio": 30000 },
+        { "nombre": "Trumpeter Reserve Doux", "precio": 30000 },
+        { "nombre": "Rutini Malbec", "precio": 63000 },
+        { "nombre": "Rutini Sauvignon Blanc", "precio": 39000 },
+        { "nombre": "Rutini Chardonnay", "precio": 49900 },
+        { "nombre": "Rutini Rose", "precio": 64000 },
+        { "nombre": "Rutini Pinot Noir", "precio": 73000 },
+        { "nombre": "Rutini Cabernet-Merlot", "precio": 39000 },
+        { "nombre": "Rutini Cabernet Franc", "precio": 52000 },
+        { "nombre": "Rutini Cabernet Franc-Malbec", "precio": 39000 },
+        { "nombre": "Rutini Dominio Gran Malbec", "precio": 110000 },
+        { "nombre": "Rutini Dominio Grand Blend", "precio": 110000 },
+        { "nombre": "Rutini Grand Dominio Cabernet Sauvignon", "precio": 110000 },
+        { "nombre": "Rutini Dominio Malbec", "precio": 65000 },
+        { "nombre": "Rutini Dominio Malbec-Cabernet Franc", "precio": 65000 },
+        { "nombre": "Rutini Dominio Cabernet Sauvignon", "precio": 49000 },
+        { "nombre": "Rutini Dominio Chardonnay", "precio": 65000 },
+        { "nombre": "Rutini Gualtallary Cabernet Franc", "precio": 85000 },
+        { "nombre": "La Linda Malbec", "precio": 25000 },
+        { "nombre": "Luigi Bosca Chardonnay", "precio": 39000 },
+        { "nombre": "Luigi Bosca Cabernet Sauvignon", "precio": 39000 },
+        { "nombre": "Luigi Bosca Insignia Malbec", "precio": 39000 },
+        { "nombre": "Luigi Bosca Rose", "precio": 49000 },
+        { "nombre": "Luigi Bosca De Sangre Cabernet Sauvignon", "precio": 49000 },
+        { "nombre": "Luigi Bosca De Sangre White Blend", "precio": 49000 },
+        { "nombre": "Luigi Bosca De Sangre Red Blend", "precio": 48000 },
+        { "nombre": "Altos del Plata Cabernet Sauvignon", "precio": 16000 },
+        { "nombre": "Altos del Plata Chardonnay", "precio": 16000 },
+        { "nombre": "Altos del Plata Malbec", "precio": 16000 },
+        { "nombre": "Latitud 33 Sur Chardonnay", "precio": 25000 },
+        { "nombre": "Latitud 33 Sur Malbec", "precio": 25000 },
+        { "nombre": "Terrazas Reserva Cabernet Sauvignon", "precio": 35000 },
+        { "nombre": "Terrazas Reserva Chardonnay", "precio": 35000 },
+        { "nombre": "Terrazas Reserva Malbec", "precio": 35000 },
+        { "nombre": "Salentein Reserve Malbec / Cabernet Sauvignon", "precio": 30000 },
+        { "nombre": "Salentein Reserve Chardonnay", "precio": 30000 },
+        { "nombre": "Salentein Reserve Sauvignon Blanc", "precio": 30000 },
+        { "nombre": "Salentein Numia Malbec / Numia Cabernet Franc", "precio": 36000 },
+        { "nombre": "Cupra Incoronata Rose", "precio": 49000 },
+        { "nombre": "Cupra Gran Malbec", "precio": 55000 },
+        { "nombre": "Cupra Gran Corte", "precio": 59000 },
+        { "nombre": "Imperial", "descripcion": "Malbec / Red Blend / Rosado.", "precio": 59000 }
+      ]
+    },
+    {
+      "nombre": "Espumantes",
+      "items": [
+        { "nombre": "Chandon Delice 750CC", "precio": 38500 },
+        { "nombre": "Chandon Rose 750CC", "precio": 38500 },
+        { "nombre": "Chandon Aperitif 750CC", "precio": 38500 },
+        { "nombre": "Chandon Extra Brut 750CC", "precio": 38500 },
+        { "nombre": "Barón B Extra Brut 750CC", "precio": 55000 },
+        { "nombre": "Barón B Rose 750CC", "precio": 57000 },
+        { "nombre": "Barón B Brut Nature 750CC", "precio": 57000 },
+        { "nombre": "Luigi Bosca Extra Brut", "precio": 40000 },
+        { "nombre": "D.V. Catena Nature", "precio": 42000 },
+        { "nombre": "Salentein Brut Nature / Extra Brut 750", "precio": 35000 },
+        { "nombre": "Salentein Blancs de Blancs 750", "precio": 40000 },
+        { "nombre": "Rutini Extra Brut", "precio": 42000 },
+        { "nombre": "Rutini Dominio Brut Nature", "precio": 45000 },
+        { "nombre": "Rutini Dominio Extra Brut", "precio": 45000 },
+        { "nombre": "Trumpeter Espumantes", "descripcion": "Extra Brut / Brut Nature / Brut Rose Malbec.", "precio": 36000 },
+        { "nombre": "Moet", "precio": 360000 },
+        { "nombre": "Veuve Clicquot", "precio": 380000 },
+        { "nombre": "Don Perignon", "precio": 850000 }
+      ]
+    }
+  ]
+}
