@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es-AR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Malloy's - Bar de Costa</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&amp;family=Dm+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600&amp;family=DM+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"tertiary-fixed": "#b9eaff", error: "#ba1a1a", "tertiary-fixed-dim": "#6cd3f9", "surface-variant": "#f9dcd7", "surface-dim": "#f0d4cf", surface: "#fff8f6", "on-surface": "#271815", "on-secondary-container": "#752317", "surface-container-low": "#fff0ee", "on-primary-fixed-variant": "#920800", "primary-container": "#d83925", "on-tertiary": "#ffffff", outline: "#8f706a", "on-primary-fixed": "#400100", "error-container": "#ffdad6", "inverse-surface": "#3e2c29", "on-surface-variant": "#5b403c", "on-background": "#271815", primary: "#b41e0e", "on-error-container": "#93000a", "surface-bright": "#fff8f6", "inverse-primary": "#ffb4a7", secondary: "#9e4132", "secondary-fixed-dim": "#ffb4a7", "on-primary": "#ffffff", "surface-container-lowest": "#ffffff", background: "#fff8f6", "surface-tint": "#b82110", "primary-fixed": "#ffdad4", "primary-fixed-dim": "#ffb4a7", "secondary-fixed": "#ffdad4", "on-primary-container": "#fffbff", "surface-container-high": "#ffe2dd", "surface-container-highest": "#f9dcd7", "outline-variant": "#e4beb7", "surface-container": "#ffe9e5", "on-tertiary-container": "#fafdff", "on-secondary-fixed": "#400100", "inverse-on-surface": "#ffedea", tertiary: "#00647e", "on-error": "#ffffff", "tertiary-container": "#007f9e", "on-tertiary-fixed": "#001f29", "on-secondary": "#ffffff", "secondary-container": "#fe8b77", "on-secondary-fixed-variant": "#7f2a1e", "on-tertiary-fixed-variant": "#004d62"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {unit: "8px", "container-max": "1280px", "margin-mobile": "20px", gutter: "24px", "margin-desktop": "60px", "section-gap": "120px"}, fontFamily: {"display-lg": ["Bricolage Grotesque"], "display-lg-mobile": ["Bricolage Grotesque"], "headline-md": ["Bricolage Grotesque"], "headline-sm": ["Bricolage Grotesque"], "body-lg": ["DM Sans"], "body-md": ["DM Sans"], "label-caps": ["DM Sans"], headline: ["Bricolage Grotesque"], display: ["Bricolage Grotesque"], body: ["Dm Sans"], label: ["Dm Sans"]}, fontSize: {"display-lg": ["64px", {lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "600"}], "display-lg-mobile": ["40px", {lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "600"}], "headline-md": ["32px", {lineHeight: "1.3", fontWeight: "500"}], "headline-sm": ["24px", {lineHeight: "1.4", fontWeight: "500"}], "body-lg": ["18px", {lineHeight: "1.6", fontWeight: "400"}], "body-md": ["16px", {lineHeight: "1.6", fontWeight: "400"}], "label-caps": ["12px", {lineHeight: "1", letterSpacing: "0.1em", fontWeight: "700"}]}}}};</script>
+<style>
+        .glass-nav {
+            transition: background-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
+        }
+        .glass-nav.scrolled {
+            background-color: rgba(255, 248, 242, 0.95);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 4px 6px -1px rgba(151, 72, 34, 0.05);
+        }
+        .organic-shape {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+        .film-grain {
+            position: relative;
+        }
+        .film-grain::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)" opacity="0.08"/%3E%3C/svg%3E');
+            pointer-events: none;
+            mix-blend-mode: overlay;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 rounded-xl mt-4 max-w-container-max mx-auto left-0 right-0 glass-nav bg-surface/80 backdrop-blur-xl shadow-sm shadow-primary/5" id="mainNav">
+<div class="flex justify-between items-center px-margin-desktop py-4">
+<a class="flex items-center gap-2" href="#">
+<img alt="Malloy's Logo" class="h-10 w-10 object-contain rounded-full shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATuMlrpqOQF1dQbnAm_xb_Z91h1EqU0aagEFb3CFEORYEkMuur6VED6H8-5wdolTK77C-0SbuvxlbeIDWc4IFbjImHljct0t_dAdXOQliaW6Te7SZkS4RBZGLjGBme61ytNGaKA2j9k9aJolbcghRDf08LpPhYliTdkFthqGi3CLPshoNPk7kHJaWzcT9oNW0Q4cPnuR1lSqsdqFRBWF2Fm2rhqkdMfYyLOqzm6l-axBii45tec--XFZTByYz6KJ5V3ETFlgOm_Pk7"/>
+<span class="font-display-lg text-headline-sm text-primary tracking-tight">Malloy's</span>
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-300" href="#experiencia">La Experiencia</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-300" href="#carta">La Carta</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-300" href="#galeria">Galería</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-300" href="#ubicacion">Contacto</a>
+</div>
+<button class="hidden md:inline-flex items-center justify-center bg-primary-container text-on-tertiary rounded-full px-6 py-3 font-body-md font-bold uppercase tracking-wide hover:scale-105 hover:shadow-md transition-all duration-300">
+                Reservar
+            </button>
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full h-screen min-h-[700px] flex items-center justify-center overflow-hidden film-grain">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A breathtaking full-bleed photograph of a luxurious wooden deck extending over a calm river at sunset. The scene is bathed in golden hour light, casting long shadows and a warm, inviting glow. In the foreground, empty lounge chairs and tables await guests, while lush tropical palm trees frame the edges. The aesthetic is sophisticated relaxation, high-end editorial, with a warm color palette dominated by sunset oranges, soft wood browns, and deep palm greens." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCOgxNDQPG7CtiLLP99reKkTympP9MiLsb5neChvNenkGrLgRCLhR6C8thj4osy4X-wof8wYZPCgNxYaRaRONOtbSZYC0vryB36jYdJ6nU2wiRBzxD44ykQTSQQHmC6b_SNT6UOMQXKEhMmLY44-t6tWWRW8ZonvrLJfdzD_NCIHlaZEttR9dxFFmuIqmEolld8ACWcBHkOvUIGIYqi3xyNX6fx_uPEYM7CxEUYfU5zOxTviV5xvdqBuhFC316-QJmYaCTthkyvWG81')">
+<div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-surface-variant/90"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop mt-20 flex flex-col items-center max-w-4xl mx-auto">
+<img alt="Malloy's Logo" class="w-32 md:w-48 mb-6 drop-shadow-lg rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATuMlrpqOQF1dQbnAm_xb_Z91h1EqU0aagEFb3CFEORYEkMuur6VED6H8-5wdolTK77C-0SbuvxlbeIDWc4IFbjImHljct0t_dAdXOQliaW6Te7SZkS4RBZGLjGBme61ytNGaKA2j9k9aJolbcghRDf08LpPhYliTdkFthqGi3CLPshoNPk7kHJaWzcT9oNW0Q4cPnuR1lSqsdqFRBWF2Fm2rhqkdMfYyLOqzm6l-axBii45tec--XFZTByYz6KJ5V3ETFlgOm_Pk7"/>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-surface-bright mb-6 drop-shadow-md">Sentite de vacaciones, a orillas del río</h1>
+<div class="flex flex-wrap justify-center gap-4 mb-10">
+<span class="inline-flex items-center gap-1.5 bg-surface/20 backdrop-blur-md border border-surface/30 text-surface-bright px-4 py-1.5 rounded-full font-label-caps uppercase">
+<span class="material-symbols-outlined text-sm">water</span> Frente al río
+                </span>
+<span class="inline-flex items-center gap-1.5 bg-surface/20 backdrop-blur-md border border-surface/30 text-surface-bright px-4 py-1.5 rounded-full font-label-caps uppercase">
+<span class="material-symbols-outlined text-sm">pets</span> Pet friendly
+                </span>
+<span class="inline-flex items-center gap-1.5 bg-surface/20 backdrop-blur-md border border-surface/30 text-surface-bright px-4 py-1.5 rounded-full font-label-caps uppercase">
+<span class="material-symbols-outlined text-sm">schedule</span> Abierto todos los días 12 a 02 hs
+                </span>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+<button class="bg-primary-container text-on-tertiary px-8 py-4 rounded-full font-body-md font-bold hover:scale-105 hover:shadow-lg transition-all duration-300 shadow-sm shadow-primary/20 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg">chat</span>
+                    Reservar por WhatsApp
+                </button>
+<button class="bg-transparent border-2 border-surface-bright text-surface-bright px-8 py-4 rounded-full font-body-md font-bold hover:bg-surface-bright hover:text-primary transition-all duration-300">
+                    Ver la carta
+                </button>
+</div>
+</div>
+</header><section class="bg-[#E8DCC8] py-section-gap px-margin-mobile md:px-margin-desktop relative z-20" id="experiencia">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-6">
+<h2 class="font-display-lg text-headline-md md:text-display-lg text-primary tracking-tight">
+        Un bar de playa en San Isidro
+      </h2>
+<div class="flex flex-col gap-4 text-body-lg text-on-surface-variant">
+<p>
+          Descubrí la magia de nuestros decks de madera que se extienden sobre el río, creando el escenario perfecto para una tarde inolvidable bajo la sombra de las palmeras.
+        </p>
+<p>
+          Nuestros atardeceres son legendarios, tiñendo el cielo de colores cálidos mientras disfrutás de la brisa ribereña en un ambiente sofisticado y relajado.
+        </p>
+<p>
+          Acompañá el momento con nuestra coctelería de autor, diseñada para refrescar tus sentidos con ingredientes locales y técnicas internacionales.
+        </p>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+<img alt="Mesas al aire libre con vista al río" class="w-full h-full object-cover sepia-[0.2] brightness-[0.95] contrast-[1.05]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOgxNDQPG7CtiLLP99reKkTympP9MiLsb5neChvNenkGrLgRCLhR6C8thj4osy4X-wof8wYZPCgNxYaRaRONOtbSZYC0vryB36jYdJ6nU2wiRBzxD44ykQTSQQHmC6b_SNT6UOMQXKEhMmLY44-t6tWWRW8ZonvrLJfdzD_NCIHlaZEttR9dxFFmuIqmEolld8ACWcBHkOvUIGIYqi3xyNX6fx_uPEYM7CxEUYfU5zOxTviV5xvdqBuhFC316-QJmYaCTthkyvWG81"/>
+</div>
+</div>
+</div>
+</section><section class="bg-surface py-section-gap px-margin-mobile md:px-margin-desktop relative z-20" id="carta">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-display-lg text-headline-md md:text-display-lg text-primary tracking-tight mb-4">Para todos los gustos</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+<!-- Card 1 -->
+<div class="flex flex-col gap-4 group">
+<div class="aspect-[4/3] rounded-xl overflow-hidden shadow-sm">
+<img alt="A las brasas" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXkuBmiSTUP87fRzZwz_B6wuR53s5CipxeGDLJu7LmEYe3WYH965iByfaNizf1iK4Y9peGBWiVjYB1q2nLBPse7KmxQ4OH7NxI5P5UBIlYCJHbckv3a2epBXTDFgoxD3xG4r1Vea4hPlf70bZdoFxTInABd4Kwjv_iXACrQ3xRA-qcAmGogNgGlud2c7vCFoxS2JV-RPCyN1ta9NwdsKbrNUiItQkROHXs-4eARnU8dSGaCT1t5Yzz5gDIhES1uNMKjQVDo-CYT0-U"/>
+</div>
+<div>
+<h3 class="font-display-lg text-headline-sm text-primary mb-1">A las brasas</h3>
+<p class="text-body-md text-on-surface-variant">Ojo de bife y costillar al horno</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col gap-4 group">
+<div class="aspect-[4/3] rounded-xl overflow-hidden shadow-sm">
+<img alt="Sushi &amp; tiraditos" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfRsRIdBd4ga0WZyxQIYrKvEA2GQoUGtbbwz_su_ClFtktlHJPcQldGovIqDoGYSKntCoAfVpSnOyKqlDKQSOYoQHDln-nE3Bvr8ZHyVZPf6OOxohdSlRq-LKYvs8rwtpPWRidYI1BXUPz9HSJFZgeVg0e0glYdaNRMdTjm7eSXnd-YEAMBv6v_GmXCD9oJNoLQarcbsRA09eZr7OU4pc1B3WuuCNoI9DmeZVkTKosuyORuzBjpS0v01iEzO4eyCuQBItZDr3oz44G"/>
+</div>
+<div>
+<h3 class="font-display-lg text-headline-sm text-primary mb-1">Sushi &amp; tiraditos</h3>
+<p class="text-body-md text-on-surface-variant">Rolls tradicionales y especiales</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col gap-4 group">
+<div class="aspect-[4/3] rounded-xl overflow-hidden shadow-sm">
+<img alt="Pastas" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoNR5wvT7Dog-xok1dJ-ub8CcBSafP81jW1YnPWrrf9WCkpOP-OLQSxxgPl5KD7NOwLvTrIv6o4BzIh5uOZZhSuWCMrhk62nSSXyFmfeJ2CsenfijBEa2EXHfpaEz2GNLK_zhVsVIF5NRETVwKJTwu0efdmVwDrDjDA71C6ts3Vbn-5-tiNzZNclpq7pJqLnCUuXrQWyPqDDK_KdWQE43x8hms0xO53B6zwtnPNDYtANsIgXpnDbeiGRreIn9O0t1SQRgoPUAaJyLR"/>
+</div>
+<div>
+<h3 class="font-display-lg text-headline-sm text-primary mb-1">Pastas</h3>
+<p class="text-body-md text-on-surface-variant">Cocina italiana casera</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col gap-4 group">
+<div class="aspect-[4/3] rounded-xl overflow-hidden shadow-sm">
+<img alt="Coctelería de autor" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJS6kQz4bv78MP_iGo4To39GuqvhjjEISJD8ebvUikAoU0XpYMcC4Rt3T6lzRVj15_FbQ0zipa1NIwKXbT4vETbnElszN5uXFUJBlbZ0gi2nvQJn6Oc_Ym_m4UPgXnQ3vVrT9fCk0WK85GeWr5bT0pLFI0igNaXpeZyKmPu0fxvU59FMaed4Xrd-lpcSmXYojlaE5iBAodHnRygK7MSlZDxsfG--q4_j4CP6pWe3PIQBYa0yO8_2VHF0rSSdg-XUkzSaTD4LubJB6F"/>
+</div>
+<div>
+<h3 class="font-display-lg text-headline-sm text-primary mb-1">Coctelería de autor</h3>
+<p class="text-body-md text-on-surface-variant">Tragos frente al río</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-center gap-8">
+<div class="flex flex-wrap justify-center gap-4">
+<span class="inline-flex items-center gap-1.5 bg-surface-container-low border border-outline-variant text-on-surface-variant px-4 py-1.5 rounded-full font-label-caps uppercase">
+<span class="material-symbols-outlined text-sm">eco</span> Opciones veggie
+        </span>
+<span class="inline-flex items-center gap-1.5 bg-surface-container-low border border-outline-variant text-on-surface-variant px-4 py-1.5 rounded-full font-label-caps uppercase">
+<span class="material-symbols-outlined text-sm">no_food</span> Opciones sin TACC
+        </span>
+</div>
+<button class="bg-primary-container text-on-tertiary px-8 py-4 rounded-full font-body-md font-bold uppercase tracking-wide hover:scale-105 hover:shadow-lg transition-all duration-300 shadow-sm shadow-primary/20">
+        Ver la carta completa
+      </button>
+</div>
+</div>
+</section><section class="bg-[#E8DCC8] py-section-gap px-margin-mobile md:px-margin-desktop relative z-20" id="galeria">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-display-lg text-headline-md md:text-display-lg text-primary tracking-tight mb-4">Un lugar para quedarse</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="lg:col-span-2 aspect-[16/9] rounded-xl overflow-hidden shadow-md group">
+<img alt="Deck de madera al atardecer" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOgxNDQPG7CtiLLP99reKkTympP9MiLsb5neChvNenkGrLgRCLhR6C8thj4osy4X-wof8wYZPCgNxYaRaRONOtbSZYC0vryB36jYdJ6nU2wiRBzxD44ykQTSQQHmC6b_SNT6UOMQXKEhMmLY44-t6tWWRW8ZonvrLJfdzD_NCIHlaZEttR9dxFFmuIqmEolld8ACWcBHkOvUIGIYqi3xyNX6fx_uPEYM7CxEUYfU5zOxTviV5xvdqBuhFC316-QJmYaCTthkyvWG81"/>
+</div>
+<div class="aspect-[3/4] rounded-xl overflow-hidden shadow-md group">
+<img alt="Palmeras" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOgxNDQPG7CtiLLP99reKkTympP9MiLsb5neChvNenkGrLgRCLhR6C8thj4osy4X-wof8wYZPCgNxYaRaRONOtbSZYC0vryB36jYdJ6nU2wiRBzxD44ykQTSQQHmC6b_SNT6UOMQXKEhMmLY44-t6tWWRW8ZonvrLJfdzD_NCIHlaZEttR9dxFFmuIqmEolld8ACWcBHkOvUIGIYqi3xyNX6fx_uPEYM7CxEUYfU5zOxTviV5xvdqBuhFC316-QJmYaCTthkyvWG81"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden shadow-md group">
+<img alt="Plato a las brasas" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXkuBmiSTUP87fRzZwz_B6wuR53s5CipxeGDLJu7LmEYe3WYH965iByfaNizf1iK4Y9peGBWiVjYB1q2nLBPse7KmxQ4OH7NxI5P5UBIlYCJHbckv3a2epBXTDFgoxD3xG4r1Vea4hPlf70bZdoFxTInABd4Kwjv_iXACrQ3xRA-qcAmGogNgGlud2c7vCFoxS2JV-RPCyN1ta9NwdsKbrNUiItQkROHXs-4eARnU8dSGaCT1t5Yzz5gDIhES1uNMKjQVDo-CYT0-U"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden shadow-md group">
+<img alt="Sushi rolls" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfRsRIdBd4ga0WZyxQIYrKvEA2GQoUGtbbwz_su_ClFtktlHJPcQldGovIqDoGYSKntCoAfVpSnOyKqlDKQSOYoQHDln-nE3Bvr8ZHyVZPf6OOxohdSlRq-LKYvs8rwtpPWRidYI1BXUPz9HSJFZgeVg0e0glYdaNRMdTjm7eSXnd-YEAMBv6v_GmXCD9oJNoLQarcbsRA09eZr7OU4pc1B3WuuCNoI9DmeZVkTKosuyORuzBjpS0v01iEzO4eyCuQBItZDr3oz44G"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden shadow-md group">
+<img alt="Tragos de autor" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJS6kQz4bv78MP_iGo4To39GuqvhjjEISJD8ebvUikAoU0XpYMcC4Rt3T6lzRVj15_FbQ0zipa1NIwKXbT4vETbnElszN5uXFUJBlbZ0gi2nvQJn6Oc_Ym_m4UPgXnQ3vVrT9fCk0WK85GeWr5bT0pLFI0igNaXpeZyKmPu0fxvU59FMaed4Xrd-lpcSmXYojlaE5iBAodHnRygK7MSlZDxsfG--q4_j4CP6pWe3PIQBYa0yO8_2VHF0rSSdg-XUkzSaTD4LubJB6F"/>
+</div>
+<div class="lg:col-span-3 aspect-[21/9] rounded-xl overflow-hidden shadow-md group">
+<img alt="Interior con mural tropical" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOgxNDQPG7CtiLLP99reKkTympP9MiLsb5neChvNenkGrLgRCLhR6C8thj4osy4X-wof8wYZPCgNxYaRaRONOtbSZYC0vryB36jYdJ6nU2wiRBzxD44ykQTSQQHmC6b_SNT6UOMQXKEhMmLY44-t6tWWRW8ZonvrLJfdzD_NCIHlaZEttR9dxFFmuIqmEolld8ACWcBHkOvUIGIYqi3xyNX6fx_uPEYM7CxEUYfU5zOxTviV5xvdqBuhFC316-QJmYaCTthkyvWG81"/>
+</div>
+</div>
+</div>
+</section><section class="bg-surface-container-low py-section-gap px-margin-mobile md:px-margin-desktop relative z-20" id="opiniones">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col items-center text-center mb-12">
+<div class="inline-flex items-center gap-2 bg-primary/5 border border-primary/10 text-primary px-6 py-2 rounded-full font-label-caps mb-6">
+<span class="material-symbols-outlined text-lg">star</span>
+<span>4.2 ★ · más de 28.000 opiniones en Google</span>
+</div>
+<h2 class="font-display-lg text-headline-md md:text-display-lg text-primary tracking-tight">Lo que dicen nuestros clientes</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review 1 -->
+<div class="bg-surface p-8 rounded-xl shadow-sm border border-outline-variant/30 flex flex-col gap-4">
+<div class="flex text-primary">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-body-lg text-on-surface-variant italic">"La vista al río es inmejorable, ideal para ir al atardecer. Las porciones son súper abundantes y el ambiente es muy relajado. ¡Volveremos!"</p>
+<div class="flex items-center justify-between mt-4">
+<span class="font-bold text-primary">Martina</span>
+<img alt="Google" class="h-5 opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD48PYEa2yxq5qcFb-QYiho0_Ktu-C4LCLgj2SjS3UeytAJw0mE9y3IpTD3d7as6wxEZJ7SHwALpAhFTnVUK4DVTU18Qcxfk9wo6-h55uR9qdH1K3UiLKwyIEK5y35SKzsExXZ6BQSDcVCrahZmo6QCqNHBfBL20mQ8Dme4LMaNFDddJtfHr53dtdrKH6fQfETCqn2MtsS-IEzAyDSPKjB9eaARWClx-lwnTJFiyMyBz7yU-mkJl5MMrj0ObGWknrnXRVJ0bgbt9SmF"/>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface p-8 rounded-xl shadow-sm border border-outline-variant/30 flex flex-col gap-4">
+<div class="flex text-primary">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-body-lg text-on-surface-variant italic">"Excelente lugar en San Isidro. La comida es riquísima y el servicio muy atento. El deck sobre el agua te hace sentir de vacaciones."</p>
+<div class="flex items-center justify-between mt-4">
+<span class="font-bold text-primary">Facundo</span>
+<img alt="Google" class="h-5 opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA5GjsbgZluQeYPAn0xkVmgRmAc59oEYJyxYejiVzokIW2y-EBFNtu6ODy1Zs5hplUZDL5AqHTclNduRenUSgqzp0CHJsrLnGCAvBvZsQoyOrE2Ct6paTOOb9-AquO2csyx2RP5n5x2RfnxKbWIeZ9O-Kys7gX0bN_txJkzOUxrvLWarkGHdXiPzl3bZiOY202yMAnRvKOGOsToa0av3IDef_tBvpreU7hBoBoUjBfqwHVYOXu826XXwObBRjtur3V8E4lAobVpg8Y"/>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface p-8 rounded-xl shadow-sm border border-outline-variant/30 flex flex-col gap-4">
+<div class="flex text-primary">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-body-lg text-on-surface-variant italic">"Un clásico que nunca falla. Los tragos de autor son increíbles y la comida a las brasas es de otro nivel. Muy recomendado para grupos."</p>
+<div class="flex items-center justify-between mt-4">
+<span class="font-bold text-primary">Valentina</span>
+<img alt="Google" class="h-5 opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB1fq6SfA1kUO6zuSEjGBsQEuhW7T0tZWSvDuM4lChS6hl1hhwswjLkmplnchyU6uKADZry_uEU3umpBvYAEEp-MmkxWTrgnaGw3c_Mc9cVNt7P8StJaSHD1vGzEQu6XX1XxqkCO4n2gKr_VaEUbKJZNmZ3N5Gd-I16spSva2hgMUVRLoWBtOLPe_iVGSw5nP8QOrkce8j9EEJrn2vLQY3V9JykKnLWVgAlg3UShePoPaO6pdeFSOZFVBIbA8w4VVSA7-Hhkw_d6vK"/>
+</div>
+</div>
+</div>
+</div>
+</section><section class="bg-[#E8DCC8] py-section-gap px-margin-mobile md:px-margin-desktop relative z-20" id="ubicacion">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-8">
+<h2 class="font-display-lg text-headline-md md:text-display-lg text-primary tracking-tight">Vení a conocernos</h2>
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="text-body-lg">Sebastián Elcano 1723, Bajo San Isidro</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span class="text-body-lg">Todos los días de 12:00 a 02:00</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">call</span>
+<span class="text-body-lg">+54 11 4798-4262</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">share</span>
+<span class="text-body-lg">@malloysbardecosta</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="inline-flex items-center gap-1.5 bg-primary/10 border border-primary/20 text-primary px-4 py-1.5 rounded-full font-label-caps uppercase text-sm">
+<span class="material-symbols-outlined text-sm">local_parking</span> Estacionamiento propio
+        </span>
+<span class="inline-flex items-center gap-1.5 bg-primary/10 border border-primary/20 text-primary px-4 py-1.5 rounded-full font-label-caps uppercase text-sm">
+<span class="material-symbols-outlined text-sm">pets</span> Pet friendly
+        </span>
+<span class="inline-flex items-center gap-1.5 bg-primary/10 border border-primary/20 text-primary px-4 py-1.5 rounded-full font-label-caps uppercase text-sm">
+<span class="material-symbols-outlined text-sm">water</span> Frente al río
+        </span>
+</div>
+</div>
+<div class="relative aspect-square md:aspect-auto md:h-[500px] rounded-xl overflow-hidden shadow-lg border-4 border-surface-bright">
+<div class="absolute inset-0 bg-[#f0e9df] flex items-center justify-center">
+<div class="relative flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-5xl drop-shadow-md">location_on</span>
+<div class="mt-2 bg-surface px-4 py-2 rounded-lg shadow-md border border-outline-variant/30">
+<p class="font-bold text-primary text-sm">Malloy's Bar de Costa</p>
+</div>
+</div>
+<div class="absolute bottom-4 right-4 bg-surface/80 backdrop-blur-md p-2 rounded-lg text-[10px] text-on-surface-variant uppercase tracking-widest">
+          San Isidro Coastline
+        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Content below hero -->
+<main class="bg-surface relative z-20 rounded-t-[40px] pt-20 pb-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-display-lg text-headline-md text-primary mb-8 text-center">Bienvenidos a Malloy's</h2>
+<p class="text-body-lg text-on-surface-variant text-center max-w-2xl mx-auto">
+                Disfrutá de la mejor gastronomía y coctelería frente al río. Un espacio único en Bajo San Isidro para desconectar y vivir momentos inolvidables.
+            </p>
+</div>
+</main><section class="relative w-full h-[400px] flex items-center justify-center overflow-hidden film-grain">
+<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCOgxNDQPG7CtiLLP99reKkTympP9MiLsb5neChvNenkGrLgRCLhR6C8thj4osy4X-wof8wYZPCgNxYaRaRONOtbSZYC0vryB36jYdJ6nU2wiRBzxD44ykQTSQQHmC6b_SNT6UOMQXKEhMmLY44-t6tWWRW8ZonvrLJfdzD_NCIHlaZEttR9dxFFmuIqmEolld8ACWcBHkOvUIGIYqi3xyNX6fx_uPEYM7CxEUYfU5zOxTviV5xvdqBuhFC316-QJmYaCTthkyvWG81')">
+<div class="absolute inset-0 bg-black/30"></div>
+</div>
+<div class="relative z-10 text-center">
+<button class="bg-primary-container text-on-tertiary px-10 py-5 rounded-full font-body-md font-bold uppercase tracking-wide hover:scale-105 hover:shadow-lg transition-all duration-300 shadow-sm shadow-primary/20 flex items-center justify-center gap-3 mx-auto">
+<span class="material-symbols-outlined text-xl">chat</span>
+      Reservar por WhatsApp
+    </button>
+</div>
+</section>
+<!-- Floating WhatsApp -->
+<footer class="bg-surface-container py-12 px-margin-mobile md:px-margin-desktop border-t border-outline-variant/30">
+<div class="max-w-container-max mx-auto flex flex-col items-center gap-8">
+<div class="flex flex-col items-center gap-2">
+<img alt="Malloy's Logo" class="h-12 w-12 object-contain rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATuMlrpqOQF1dQbnAm_xb_Z91h1EqU0aagEFb3CFEORYEkMuur6VED6H8-5wdolTK77C-0SbuvxlbeIDWc4IFbjImHljct0t_dAdXOQliaW6Te7SZkS4RBZGLjGBme61ytNGaKA2j9k9aJolbcghRDf08LpPhYliTdkFthqGi3CLPshoNPk7kHJaWzcT9oNW0Q4cPnuR1lSqsdqFRBWF2Fm2rhqkdMfYyLOqzm6l-axBii45tec--XFZTByYz6KJ5V3ETFlgOm_Pk7"/>
+<span class="font-display-lg text-headline-sm text-primary tracking-tight">Malloy's</span>
+</div>
+<nav class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+<a class="font-body-md text-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#experiencia">La experiencia</a>
+<a class="font-body-md text-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#carta">La carta</a>
+<a class="font-body-md text-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#galeria">Galería</a>
+<a class="font-body-md text-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#opiniones">Opiniones</a>
+<a class="font-body-md text-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#contacto">Contacto</a>
+</nav>
+<div class="flex gap-6">
+<a class="text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+<a class="text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">facebook</span></a>
+<a class="text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">video_library</span></a>
+</div>
+<div class="text-center border-t border-outline-variant/20 pt-8 w-full">
+<p class="text-on-surface-variant text-[10px] uppercase tracking-widest opacity-60">
+        © 2024 Malloy's Bar de Costa. Todos los derechos reservados.
+      </p>
+</div>
+</div>
+</footer><a aria-label="Contactar por WhatsApp" class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 flex items-center justify-center" href="#">
+<svg class="w-8 h-8" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+</a>
+<script>
+        // Simple scroll effect for navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('mainNav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body></html>
